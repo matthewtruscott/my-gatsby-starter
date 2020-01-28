@@ -1,0 +1,93 @@
+@import "./assets/css/mixins";
+@import "./assets/css/variables";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 200;
+  src: url("./assets/fonts/Avenir Light.otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 300;
+  src: url("./assets/fonts/Avenir Book.otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 400;
+  src: url("./assets/fonts/Avenir Roman.otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 500;
+  src: url("./assets/fonts/Avenir Medium.otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 600;
+  src: url("./assets/fonts/Avenir Heavy.otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 700;
+  src: url("./assets/fonts/Avenir Black.otf");
+}
+
+body {
+  color: #4a4949;
+  font-weight: $font-light;
+}
+// a[aria-current="page"] span::after {
+//   background-color: yellowgreen;
+//   transform: scaleX(1);
+// }
+
+img {
+  margin: 0;
+}
+
+ul a.active li span {
+  font-weight: 600;
+  &::after {
+    height: 3px;
+    transform: scaleX(1);
+  }
+}
+
+.trails-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trails-text {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  color: palevioletred;
+  font-size: 5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
+
+.trails-text > div {
+  overflow: hidden;
+}

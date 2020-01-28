@@ -1,0 +1,14 @@
+<svg viewBox="0 0 83 56.5">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <g id="hamburger" transform="translate(-101.5 -165)">
+    <line id="Line_1" data-name="Line 1" class="cls-1" x2="83" transform="translate(101.5 168)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-1" x2="83" transform="translate(101.5 193.25)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-1" x2="83" transform="translate(101.5 218.5)"/>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+@import "../assets/css/mixins";
+@import "../assets/css/variables.scss";
+
+.navigation {
+  height: 100%;
+  font-weight: $font-light; // 300
+  font-size: $text-4xl; // 2.25rem
+  background-color: white;
+  box-shadow: $shadow-2xl;
+  display: flex;
+  align-items: center;
+  z-index: 40;
+  min-width: 100%;
+
+  padding: 3rem; // p-12
+  padding-top: 6rem;
+
+  @include at480 {
+    padding: 6rem; // p-24
+    min-width: auto;
+  }
+
+  ul li {
+    @include at480 {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    span {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #4a4949;
+        height: 0.06em;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.3s ease;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+
+    &[type="case-study"] {
+      position: relative;
+      padding-left: 4rem;
+
+      @include at480 {
+        margin-top: -0.75rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      &::before {
+        content: "┗";
+        font-size: 0.5em;
+        position: absolute;
+        top: 50%;
+        left: 1.5em;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../css/mixins";
+@import "../css/variables.scss";
+
+.svg[data-state="idle"] {
+  .hamburger-line-1 {
+  }
+  .hamburger-line-2 {
+  }
+  .hamburger-line-3 {
+  }
+}
+
+.svg[data-state="active"] {
+  .hamburger-line-1 {
+  }
+  .hamburger-line-2 {
+  }
+  .hamburger-line-3 {
+  }
+}
